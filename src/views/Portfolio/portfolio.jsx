@@ -1,6 +1,6 @@
 const Portfolio = () => {
     return (
-        <div className="">
+        <div className="h-screen" id="portfolio">
             portfolio
         </div>
     );

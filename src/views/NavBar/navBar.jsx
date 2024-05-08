@@ -1,7 +1,9 @@
+import { Links } from "./NavComponents";
 const NavBar = () => {
     return (
-        <nav className="">
-            navBar
+        <nav className="flex justify-between p-3 ">
+            <img src="logo.png" alt="logo" className="h-8" />
+            <Links></Links>
         </nav>
     );
 }

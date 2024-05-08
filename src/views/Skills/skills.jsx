@@ -1,6 +1,6 @@
 const Skills = () => {
     return (
-        <div className="">
+        <div className="h-screen" id="skills">
             skills
         </div>
     );
