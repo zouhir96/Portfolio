@@ -7,6 +7,7 @@ import { Skills } from "./Skills"
 const Main = () => {
     return(
         <>
+            hello world
             <NavBar/>
             <Hero/>
             <About/>
