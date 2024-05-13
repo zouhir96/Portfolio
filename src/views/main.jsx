@@ -6,7 +6,7 @@ import { Skills } from "./Skills"
 
 const Main = () => {
     return(
-        <div className="bg-[#E7EFF7] text-[#3C5065] h-full">
+        <div className="text-[#3C5065] h-full">
             <NavBar/>
             <Hero/>
             <About/>

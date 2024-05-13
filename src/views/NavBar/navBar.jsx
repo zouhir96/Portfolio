@@ -42,7 +42,7 @@ const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-[#E7EFF7] z-10 flex justify-between md:items-center p-3">
+        <nav className="fixed top-0 left-0 right-0 bg-[#E7EFF7] z-10 shadow-md flex justify-between md:items-center p-3">
             <img src="logo.png" alt="logo" className="h-8" />
             <div className={`md:flex ${isOpen ? 'block' : 'hidden'}`}>
                 <Links></Links>
