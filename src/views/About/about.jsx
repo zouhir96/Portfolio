@@ -27,7 +27,7 @@ const About = () => {
             <h1 className="font-bold text-2xl">Experiences</h1>
             <div className="sm:grid grid-cols-2 gap-7 flex flex-col gap-7"> 
                 <ExperienceItem
-                role="Lead android developer"
+                role="LEAD ANDROID DEVELOPER"
                 type="Freelance"
                 company="Avito.ma - Frontier Digital Ventures"
                 description="Leading the developement and maintenance of the Avito android application 10M+ downloads on PlayStore."
