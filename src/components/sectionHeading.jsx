@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SectionHeading = ({ title, subtitle, description }) => {
     return (
         <div className="flex flex-col gap-3 mb-6">
