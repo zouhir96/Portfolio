@@ -30,7 +30,7 @@ const Links = () => {
     return (
         <div className="flex flex-col md:flex-row gap-8 items-center">
             {links.map((link)=> 
-                <ScrollLink to={link.route} smooth={true} duration={700} offset={-70} >{link.name}</ScrollLink>
+                <ScrollLink to={link.route} smooth={true} duration={700} offset={-30} >{link.name}</ScrollLink>
             )}
             <RouterLink to="" className="border p-2 rounded-md px-4 border-[#3C5065]">Contact</RouterLink>
             <RouterLink to="" className="border p-2 rounded-md px-4 border-[#3C5065] text-white bg-[#3C5065]">Download Resume</RouterLink>
