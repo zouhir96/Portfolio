@@ -54,7 +54,7 @@ const About = () => {
     ];
 
     return (
-        <div className="flex flex-col p-8 mt-20 gap-7" id="about">
+        <div className="flex flex-col p-8 gap-7" id="about">
             <SectionHeading
                 title="about"
                 subtitle="My education and experiences"
@@ -71,7 +71,7 @@ const About = () => {
                 />
             ))}
             <h1 className="font-bold text-2xl">Experiences</h1>
-            <div className="sm:grid grid-cols-2 gap-7 flex flex-col gap-7"> 
+            <div className="sm:grid grid-cols-2 gap-7 flex flex-col"> 
             {experienceItems.map((experienceItem) => (
                 <ExperienceItem
                     role={experienceItem.role}

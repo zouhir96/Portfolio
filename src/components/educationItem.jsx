@@ -9,7 +9,7 @@ const EducationItem = ({ institution, degree, description, location, date }) => 
             <p className="text-sm mb-5">{description}</p>
             <div className="flex sm:flex-row flex-col sm:gap-5">
                 <h6 className="flex items-center gap-3 inline"><FaLocationDot/>{location}</h6>
-                <h6 className="flex items-center gap-3 inline-block"><FaCalendarAlt/>{date}</h6>
+                <h6 className="flex items-center gap-3"><FaCalendarAlt/>{date}</h6>
             </div>
         </div>
     );
