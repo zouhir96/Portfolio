@@ -1,4 +1,5 @@
 import { About } from "./About"
+import { Contact } from "./Contact"
 import { Hero } from "./Hero"
 import { NavBar } from "./NavBar"
 import { Portfolio } from "./Portfolio"
@@ -12,6 +13,7 @@ const Main = () => {
             <About/>
             <Portfolio/>
             <Skills/>
+            <Contact/>
         </div>
     )
 }
