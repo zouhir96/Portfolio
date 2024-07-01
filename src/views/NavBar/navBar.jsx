@@ -32,7 +32,7 @@ const Links = () => {
             {links.map((link)=> 
                 <ScrollLink to={link.route} smooth={true} duration={700} offset={-30} >{link.name}</ScrollLink>
             )}
-            <RouterLink to="" className="border p-2 rounded-md px-4 border-[#3C5065]">Contact</RouterLink>
+            <Link to="contact" smooth={true} duration={700} offset={-30} className="border p-2 rounded-md px-4 border-[#3C5065]">Contact</Link>
             <RouterLink to="" className="border p-2 rounded-md px-4 border-[#3C5065] text-white bg-[#3C5065]">Download Resume</RouterLink>
         </div>
     );

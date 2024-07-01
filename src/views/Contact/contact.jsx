@@ -15,7 +15,7 @@ const contact = () => {
         }
     };
   return (
-    <div className="flex flex-col p-8 gap-7" id="about">
+    <div className="flex flex-col p-8 gap-7" id="contact">
         <SectionHeading
             title="Contact Us"
             subtitle="Get in Touch"
