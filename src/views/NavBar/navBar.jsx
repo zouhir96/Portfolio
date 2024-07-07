@@ -43,7 +43,8 @@ const NavBar = () => {
             <div className={`flex md:gap-6 gap-2`}>
                 <Links></Links>
                     <Link as={ScrollLink} to="contact" smooth={true} duration={700} offset={-30} className="border p-2 rounded-md px-4 border-[#3C5065] cursor-pointer">Contact</Link>
-                    <RouterLink to="" className="border p-2 rounded-md px-4 border-[#3C5065] text-white bg-[#3C5065]">Download Resume</RouterLink>
+                    <a href="/cv_zouhir_rajdaoui.pdf" download className="border p-2 rounded-md px-4 border-[#3C5065] text-white bg-[#3C5065]">Download Resume</a>
+
             </div>
         </nav>
     );

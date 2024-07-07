@@ -10,7 +10,7 @@ const Hero = () => {
                 </p>
                 <div className="">
                     <Link to="contact" className="border p-2 rounded-md px-4 border-[#3C5065] sm:mr-4 mr-2">Contact</Link>
-                    <Link to="" className="border p-2 rounded-md px-4 border-[#3C5065] text-white bg-[#3C5065]">Download Resume</Link>
+                    <a href="/cv_zouhir_rajdaoui.pdf" download className="border p-2 rounded-md px-4 border-[#3C5065] text-white bg-[#3C5065]">Download Resume</a>
                 </div>
             </div>
             <img src="zouhir.png" alt="zouhir" className="h-4/5 hidden md:block "/>
