@@ -32,6 +32,7 @@ const contact = () => {
             const response = await fetch('https://public.herotofu.com/v1/d19abc40-2a94-11ef-baa4-2f3d60870fc4', {
                 method: 'POST',
                 body: formData,
+                mode: 'no-cors',
             });
                 toast.success('Email sent successfully!');
                 setMessage('');
