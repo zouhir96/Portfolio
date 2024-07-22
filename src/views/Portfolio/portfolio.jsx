@@ -9,21 +9,24 @@ const Portfolio = () => {
       title: 'Hackertab-android',
       type: 'Personal project',
       description: 'The Developers homepage, Hackertab makes it easy for you to stay up-to-date with the latest developer news, tools and conferences.',
-      technologies: ['Kotlin', 'Coroutines', 'Compose', 'Hilt', 'Navigation', 'Retrofit2', 'Room']
+      technologies: ['Kotlin', 'Coroutines', 'Compose', 'Hilt', 'Navigation', 'Retrofit2', 'Room'],
+      linkToProject: "https://github.com/zouhir96/hackertab-android"
     },
     {
       image: 'portfolio/project2.png',
       title: 'Skincare',
       type: 'Personal project',
       description: 'Native Android E-commerce application to sell skincare products.',
-      technologies: ['Kotlin', 'Coroutines', 'Compose', 'Hilt', 'Navigation', 'Material', 'Datastore']
+      technologies: ['Kotlin', 'Coroutines', 'Compose', 'Hilt', 'Navigation', 'Material', 'Datastore'],
+      linkToProject: "https://github.com/zouhir96/Skincare"
     },
     {
       image: 'portfolio/project3.png',
       title: 'Konnash',
       type: 'Inyad experience',
       description: 'Digital cash book, 100% free and secure.<br>Record customers\' debts and payments, simplify follow-up and speed up collection.',
-      technologies: ['Java', 'RxJava', 'offline-first', 'Navigation', 'room', 'Retrofit2', 'Real-time synch']
+      technologies: ['Java', 'RxJava', 'offline-first', 'Navigation', 'room', 'Retrofit2', 'Real-time synch'],
+      linkToProject: "https://play.google.com/store/apps/details?id=com.invyad.konnash&pcampaignid=web_share"
     }
   ];
     return (
@@ -42,6 +45,7 @@ const Portfolio = () => {
                 type={item.type}
                 description={item.description}
                 technologies={item.technologies}
+                linkToProject={item.linkToProject}
                 />
             ))}
             </div>

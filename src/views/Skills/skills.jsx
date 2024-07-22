@@ -36,8 +36,10 @@ const Skills = () => {
                     {skills.map((skill, index) => (
                     <div key={index} 
                         className={`flex justify-around items-center p-2 bg-white ${
-                        index === 3 ? 'col-span-5' :
-                        index === 5 ? 'col-span-3' :
+                        index === 3 ? 'sm:col-span-5 col-span-6' :
+                        index === 4 ? 'sm:col-span-4 col-span-6' :
+                        index === 5 ? 'sm:col-span-3 col-span-4' :
+                        index === 14 ? 'sm:col-span-4 sm:flex hidden' :
                         'col-span-4'
                         }`}>
                         <img src="Vector.png" alt="" className="h-7" />

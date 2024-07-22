@@ -4,6 +4,7 @@ import { Hero } from "./Hero"
 import { NavBar } from "./NavBar"
 import { Portfolio } from "./Portfolio"
 import { Skills } from "./Skills"
+  import { ToastContainer } from 'react-toastify';
 
 const Main = () => {
     return(
@@ -14,6 +15,7 @@ const Main = () => {
             <Portfolio/>
             <Skills/>
             <Contact/>
+            <ToastContainer position="bottom-left" />
         </div>
     )
 }
