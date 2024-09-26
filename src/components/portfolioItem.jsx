@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { RxOpenInNewWindow } from "react-icons/rx";
 
-const PortfolioItem = ({ image, title, type, description, technologies }) => {
+const PortfolioItem = ({ image, title, type, description, technologies, linkToProject }) => {
   return (
     <div className="rounded-xl p-2 border-white border-2 shadow-md">
         <img className="rounded-xl mb-4" src={image}  alt={title}></img>
@@ -14,7 +14,7 @@ const PortfolioItem = ({ image, title, type, description, technologies }) => {
             ))}
         </div>
 
-        <Link to="" className='flex items-center gap-2 text-sm'>View project <RxOpenInNewWindow className=' text-base' /></Link>
+        <Link to={linkToProject} target='blank' className='flex items-center gap-2 text-sm'>View project <RxOpenInNewWindow className=' text-base' /></Link>
     </div>
   )
 }
