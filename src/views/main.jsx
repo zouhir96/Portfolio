@@ -3,7 +3,7 @@ import { Contact } from "./Contact";
 import { Hero } from "./Hero";
 import { NavBar } from "./NavBar";
 import { Portfolio } from "./Portfolio";
-import { Skills } from "./Skills";
+import { Services } from "./Services";
 import { ToastContainer } from "react-toastify";
 import RetroGrid from "../components/magicui/retro-grid";
 
@@ -16,7 +16,7 @@ const Main = () => {
         <Hero />
         <About />
         <Portfolio />
-        <Skills />
+        <Services />
         <Contact />
         <ToastContainer position="bottom-left" />
       </div>
