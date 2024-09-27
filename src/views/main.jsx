@@ -4,19 +4,21 @@ import { Hero } from "./Hero";
 import { NavBar } from "./NavBar";
 import { Portfolio } from "./Portfolio";
 import { Services } from "./Services";
+import { Blog } from "./Blog";
 import { ToastContainer } from "react-toastify";
 import RetroGrid from "../components/magicui/retro-grid";
 
 const Main = () => {
   return (
     <div>
-      <RetroGrid className="fixed h-full"  />
+      <RetroGrid className="fixed h-full" />
       <div className="text-[#3C5065] h-full">
         <NavBar />
         <Hero />
         <About />
         <Portfolio />
         <Services />
+        <Blog />
         <Contact />
         <ToastContainer position="bottom-left" />
       </div>
