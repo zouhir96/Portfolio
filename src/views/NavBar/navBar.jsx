@@ -23,6 +23,7 @@ const Links = () => {
     { route: "about", name: "About" },
     { route: "portfolio", name: "Portfolio" },
     { route: "services", name: "Services" },
+    { route: "blog", name: "Blog" },
   ];
 
   return (
