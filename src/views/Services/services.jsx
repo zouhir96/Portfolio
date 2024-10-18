@@ -1,8 +1,9 @@
 import { SectionHeading } from "../../components";
+import BlurFade from "../../components/ui/blur-fade.tsx";
 
 const Service = ({ icon, title, description }) => {
   return (
-    <div className="flex flex-col items-center rounded-lg border border-[#3C5065] p-4 space-y-4 hover:drop-shadow-2xl">
+    <div className="flex flex-col items-center bg-white rounded-lg border border-[#3C5065] p-4 space-y-4 hover:drop-shadow-2xl">
       <img src={icon} alt="" className="h-7 w-7" />
       <p className="font-bold text-2xl text-center">{title}</p>
       <p className="text-lg font-light text-center">{description}</p>
@@ -36,12 +37,14 @@ const Services = () => {
     <div className="flex flex-col flex-wrap space-y-10 p-10" id="services">
       <SectionHeading title="Services" subtitle="What i offer" description="" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-        {services.map((service) => (
-          <Service
-            icon={service.icon}
-            title={service.title}
-            description={service.description}
-          />
+        {services.map((service, index) => (
+          <BlurFade key={index} delay={0.25 + index * 0.05} inView>
+            <Service
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+            />
+          </BlurFade>
         ))}
       </div>
     </div>

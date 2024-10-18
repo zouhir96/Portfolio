@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 import { BorderBeam } from "../../components/magicui/border-beam.jsx";
+import BlurFade from "../../components/ui/blur-fade.tsx";
+import RetroGrid from "../../components/magicui/retro-grid";
 
 const Hero = () => {
   return (
-    <div
+    <div>
+      <RetroGrid className="h-full" />
+      <div
       className="md:h-screen flex justify-center md:items-center gap-11 sm:p-10 p-4 mt-40 md:mt-16"
       id="hero"
     >
       <div className="flex flex-col gap-6 w-4/5">
-        <h1 className="text-5xl font-bold">
-          Hi, I'm Zouhir RAJDAOUI
-        </h1>
+        <BlurFade delay={0.25} inView>
+          <h1 className="text-5xl font-bold">Hi, I'm Zouhir RAJDAOUI 👋</h1>
+        </BlurFade>
         <p>
           Experienced and creative Android Engineer with over 4 years of
           dedicated expertise in crafting innovative mobile applications.
@@ -108,6 +112,7 @@ const Hero = () => {
         <img src="zouhir1.png" alt="zouhir" className="rounded-xl" />
         <BorderBeam size={400} borderWidth={3} />
       </div>
+    </div>
     </div>
   );
 };

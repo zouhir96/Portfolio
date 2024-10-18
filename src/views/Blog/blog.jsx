@@ -1,9 +1,54 @@
 import React, { useRef } from "react";
 import { SectionHeading } from "../../components";
 
+const blogs = [
+  {
+    image: "blog.png",
+    category: "category",
+    title: "Blog title heading will go here",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+    date: "11 Jan 2022. 5 min read",
+  },
+  {
+    image: "blog.png",
+    category: "category",
+    title: "Blog title heading will go here",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+    date: "11 Jan 2022. 5 min read",
+  },
+  {
+    image: "blog.png",
+    category: "category",
+    title: "Blog title heading will go here",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+    date: "11 Jan 2022. 5 min read",
+  },
+  ,
+  {
+    image: "blog.png",
+    category: "category",
+    title: "Blog title heading will go here",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+    date: "11 Jan 2022. 5 min read",
+  },
+  ,
+  {
+    image: "blog.png",
+    category: "category",
+    title: "Blog title heading will go here",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+    date: "11 Jan 2022. 5 min read",
+  },
+];
+
 const Blog = ({ image, category, title, description, date }) => {
   return (
-    <div className="flex-none w-full sm:w-1/2 md:w-1/3 rounded-lg border border-[#3C5065]">
+    <div className="flex-none bg-white w-full sm:w-1/2 md:w-1/3 rounded-lg border border-[#3C5065] hover:drop-shadow-2xl">
       <div className="flex flex-col items-center">
         <img src="blog.png" alt={title} className="w-full aspect-[5/3]" />
         <div className="flex flex-col p-2">
@@ -37,14 +82,14 @@ const Blogs = () => {
   };
 
   return (
-    <div className="flex flex-col flex-wrap space-y-10 p-10" id="blog">
+    <div className="flex flex-col flex-wrap space-y-2 p-10" id="blog">
       <SectionHeading
         title="Blog"
         subtitle="I write some helpful articles"
         description=""
       />
       <div ref={scrollContainerRef} className="w-full overflow-x-auto">
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 p-10">
           {blogs.map((blog) => (
             <Blog
               category={blog.category}
@@ -100,50 +145,5 @@ const Blogs = () => {
     </div>
   );
 };
-
-const blogs = [
-  {
-    image: "blog.png",
-    category: "category",
-    title: "Blog title heading will go here",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    date: "11 Jan 2022. 5 min read",
-  },
-  {
-    image: "blog.png",
-    category: "category",
-    title: "Blog title heading will go here",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    date: "11 Jan 2022. 5 min read",
-  },
-  {
-    image: "blog.png",
-    category: "category",
-    title: "Blog title heading will go here",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    date: "11 Jan 2022. 5 min read",
-  },
-  ,
-  {
-    image: "blog.png",
-    category: "category",
-    title: "Blog title heading will go here",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    date: "11 Jan 2022. 5 min read",
-  },
-  ,
-  {
-    image: "blog.png",
-    category: "category",
-    title: "Blog title heading will go here",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    date: "11 Jan 2022. 5 min read",
-  },
-];
 
 export default Blogs;
