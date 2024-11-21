@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { BorderBeam } from "../../components/magicui/border-beam.jsx";
 import BlurFade from "../../components/ui/blur-fade.tsx";
 import RetroGrid from "../../components/magicui/retro-grid";
@@ -31,6 +31,9 @@ const Hero = () => {
             <Link
               to="contact"
               className="border p-2 rounded-md px-4 border-[#3C5065] sm:mr-4 mr-2"
+              smooth={true}
+              duration={700}
+              offset={-30}
             >
               Contact
             </Link>

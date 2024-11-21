@@ -56,8 +56,8 @@ const About = () => {
     <div className="flex flex-col p-8 gap-7" id="about">
       <SectionHeading
         title="about"
-        subtitle="My education and experiences"
-        description="Explore my academic accolades, professional certifications, and project experiences, as they converge to showcase the breadth and depth of my expertise in crafting cutting-edge Android solutions."
+        subtitle="Education & Professional Experience"
+        description="My journey of learning and growth through academics and real-world practice."
       />
       <h1 className="font-bold text-2xl">Experiences</h1>
       <div className="sm:grid grid-cols-2 gap-7 flex flex-col">

@@ -4,7 +4,7 @@ import { RxOpenInNewWindow } from "react-icons/rx";
 
 const PortfolioItem = ({ image, title, type, description, technologies, linkToProject }) => {
   return (
-    <div className="rounded-xl p-2 border-white border-2 shadow-md">
+    <div className="h-full rounded-xl p-2 border-white border-2 shadow-md">
         <img className="rounded-xl mb-4" src={image}  alt={title}></img>
         <h3 className="font-bold text-lg mb-1">{title}&nbsp; <span className="text-xs bg-white rounded-sm p-1">{type}</span></h3>
         <p className="text-sm mb-5"  dangerouslySetInnerHTML={{__html: description}}></p>

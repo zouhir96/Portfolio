@@ -88,7 +88,7 @@ const Blogs = () => {
         subtitle="I write some helpful articles"
         description=""
       />
-      <div ref={scrollContainerRef} className="w-full overflow-x-auto">
+      <div ref={scrollContainerRef} className="w-full overflow-x-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
         <div className="flex space-x-4 p-10">
           {blogs.map((blog) => (
             <Blog
