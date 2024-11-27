@@ -46,9 +46,9 @@ const contact = () => {
   return (
     <div className="flex flex-col p-8 gap-7" id="contact">
         <SectionHeading
-            title="Contact Us"
+            title="Contact"
             subtitle="Get in Touch"
-            description="If you have any questions or would like to work with me, feel free to reach out. <br> I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision."
+            description="Have a project in mind or just want to connect? Let’s talk!"
         />
         <div className='flex flex-col gap-7 justify-around md:grid grid-cols-2 md:gap-0 px-6 mt-9'>
             <div className='flex flex-col gap-2'>
@@ -57,11 +57,11 @@ const contact = () => {
                 <p className='font-semibold text-sm'>feel to contact me for any kind of queries, suggestions or collaborations.</p>
                 <div className='flex items-center gap-3 mt-6'>
                     <IoMdMail className='text-xl mt-1' />
-                    <p>rajdaouizouhir.pro@gmail.com</p>
+                    <p>zouhir.rajdaoui@outlook.com</p>
                 </div>
                 <div className='flex items-center gap-3 mt-4'>
                     <MdLocalPhone className='text-xl mt-1' />
-                    <p>+212-36451275</p>
+                    <p>+33-02567625</p>
                 </div>
                 <div className='flex items-center gap-3 mt-4'>
                     <FaLocationDot className='text-xl mt-1' />
